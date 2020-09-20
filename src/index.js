@@ -5,5 +5,5 @@ import HelloWorld from './components/HelloWorld' // importamos nuetro componente
 // Aqui van todos los componentes a renderizar
 ReactDOM.render(
   <HelloWorld />,
-  document.getElementById('app') // para colocar todos los componentes en nuestro index.html
+  document.getElementById("app") // para colocar todos los componentes en nuestro index.html
 )
