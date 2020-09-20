@@ -1,4 +1,5 @@
 import React from 'react' // para importar los elementos desde react
+import '../assets/styles/App.scss'
 
 // Utilizamos un <div> si queremos poner multiples elementos
 const HelloWorld = () => {
