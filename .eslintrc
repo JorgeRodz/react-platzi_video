@@ -242,7 +242,7 @@
     "radix": 2,
     "jsx-quotes": [
       2,
-      "prefer-single"
+      "prefer-double"
     ],
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
@@ -329,6 +329,10 @@
     "yoda": [
       2,
       "never"
+    ],
+    "semi": [
+      "error",
+      "always"
     ]
   }
 }
