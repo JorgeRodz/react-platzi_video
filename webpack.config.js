@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 const path = require('path') // para hacer uso del modulo path
 const HtmlWebpackPlugin = require('html-webpack-plugin') // instanciamos el plugin que instalamos
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // instanciamos el plugin para trabajar con css-sass
@@ -38,6 +39,17 @@ module.exports = {
           },
           'css-loader',
           'sass-loader'
+        ]
+      },
+      { // para hacer uso de las imagenes
+        test: /\.(png|gif|jpg)$/, // indicamos las extenciones de las imagenes a usar
+        use: [ // configuracion
+          {
+            'loader': 'file-loader', // indicamos que usaremos el file-loader que previamente instalamos
+            options: {
+              name: 'assets/[hash].[ext]' // para que cuando se mande a produccion este tome el nombre del hash
+            }
+          }
         ]
       }
     ]
