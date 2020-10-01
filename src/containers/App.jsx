@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useState, useEffect } from 'react'; // useState, useEffect -> para hacer uso de los "React Hooks"
 import Header from '../components/Header';
 import Search from '../components/Search';
@@ -8,7 +9,7 @@ import Footer from '../components/Footer';
 import '../assets/styles/App.scss';
 
 const App = () => {
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState({ mylist: [], trends: [], originals: [] });
 
   useEffect(() => {
     fetch('http://localhost:3000/initialState')
@@ -20,24 +21,23 @@ const App = () => {
     <div className="App">
       <Header />
       <Search />
+      {videos.mylist.length > 0 && (
+        <Categories title="Mi lista">
+          <Carousel>
+            <CarouselItem />
+          </Carousel>
+        </Categories>
+      )}
 
-      <Categories title="Mi lista">
-        <Carousel>
-          <CarouselItem />
-          <CarouselItem />
-        </Carousel>
-      </Categories>
       <Categories title="Tendencias">
         <Carousel>
-          <CarouselItem />
-          <CarouselItem />
+          {videos.trends.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
 
       <Categories title="Originales de Platzi video">
         <Carousel>
-          <CarouselItem />
-          <CarouselItem />
+          {videos.trends.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
 
