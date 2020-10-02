@@ -1,27 +1,25 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useState, useEffect } from 'react'; // useState, useEffect -> para hacer uso de los "React Hooks"
+import React from 'react'; // useState, useEffect -> para hacer uso de los "React Hooks"
 import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 import Footer from '../components/Footer';
+import useInitialState from '../hooks/useInitialState';
 import '../assets/styles/App.scss';
 
+const API = 'http://localhost:3000/initialState/';
+
 const App = () => {
-  const [videos, setVideos] = useState({ mylist: [], trends: [], originals: [] });
-
-  useEffect(() => {
-    fetch('http://localhost:3000/initialState')
-      .then((response) => response.json())
-      .then((data) => setVideos(data));
-  }, []);
-
-  return (
+  const initialState = useInitialState(API);
+  console.log(initialState);
+  return initialState.length === 0 ? <h1>Loading...</h1> : (
     <div className="App">
       <Header />
       <Search />
-      {videos.mylist.length > 0 && (
+
+      {initialState.mylist.length > 0 && (
         <Categories title="Mi lista">
           <Carousel>
             <CarouselItem />
@@ -31,13 +29,13 @@ const App = () => {
 
       <Categories title="Tendencias">
         <Carousel>
-          {videos.trends.map((item) => <CarouselItem key={item.id} {...item} />)}
+          {initialState.trends.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
 
       <Categories title="Originales de Platzi video">
         <Carousel>
-          {videos.trends.map((item) => <CarouselItem key={item.id} {...item} />)}
+          {initialState.originals.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
 
