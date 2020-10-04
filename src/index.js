@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; // para trabajar con el ReactDOM
-import App from './containers/App';
+import App from './routes/App';
 
 // Aqui van todos los componentes a renderizar
 ReactDOM.render(
