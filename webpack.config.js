@@ -54,6 +54,10 @@ module.exports = {
       }
     ]
   },
+  // para poder utilizar las rutas de nuestra la aplicacion -> /login /registro
+  devServer: {
+    historyApiFallback: true
+  },
   plugins: [ // para utilizar los plugins que instalamos
     new HtmlWebpackPlugin({
       template: './public/index.html', // nuestro template de html
@@ -63,4 +67,4 @@ module.exports = {
       filename: 'assets/[name].css'
     })
   ]
-}
+};
