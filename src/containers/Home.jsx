@@ -1,11 +1,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'; // useState, useEffect -> para hacer uso de los "React Hooks"
-import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-import Footer from '../components/Footer';
 import useInitialState from '../hooks/useInitialState';
 import '../assets/styles/App.scss';
 
