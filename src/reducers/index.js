@@ -3,11 +3,16 @@ const reducer = (state, action) => {
   switch (action.type) {
     case 'SET_FAVORITE':
       // guardamos en una variable si ya existe el elemento con el id
-      const result = state.myList.filter((item) => item.id === action.payload.id);
-      // si tenemos un 1 quiere decir que si existe el elementos sino retornamos la lista con todos los elementos anteriores y se sumamos un nuevo elemento
-      return result.length > 0 ? state : {
+      const exist = state.myList.find((item) => item.id === action.payload.id);
+      // si es que existe solo regresamos el state eso quiere decir que no agregara nada; sino existe vamos a agregar el nuevo elemento
+      return exist ? state : {
         ...state,
         myList: [...state.myList, action.payload],
+      };
+    case 'DELETE_FAVORITE':
+      return {
+        ...state,
+        myList: state.myList.filter((items) => items.id !== action.payload),
       };
     default:
       return state;
