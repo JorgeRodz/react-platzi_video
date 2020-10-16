@@ -3,20 +3,47 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-one-expression-per-line */
 
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import googleIcon from '../assets/static/google-icon.png'; // imagenes
 import twitterIcon from '../assets/static/twitter-icon.png'; // imagenes
 import '../assets/styles/components/Login.scss'; // para importar los estilos
 
 const Login = () => {
+  const [,form, setFormValues] = useState({});
+
+  const handleInput = (event) => {
+    // actualizamos nuestro useState pasando como parametros el lo que contiene el form, mas la informacion de los input
+    setFormValues({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // para que no se dispare el event por default y asi poder usar el console.log
+    console.log(form);
+  };
+
   return (
     <section className="login">
       <section className="login__container">
         <h2>Inicia sesión</h2>
-        <form className="login__container--form">
-          <input className="input" type="text" placeholder="Correo" />
-          <input className="input" type="password" placeholder="Contraseña" />
+        <form className="login__container--form" onSubmit={handleSubmit}>
+          <input
+            name="email"
+            className="input"
+            type="text"
+            placeholder="Correo"
+            onChange={handleInput}
+          />
+          <input
+            name="password"
+            className="input"
+            type="password"
+            placeholder="Contraseña"
+            onChange={handleInput}
+          />
           <button className="button">Iniciar sesión</button>
           <div className="login__container--remember-me">
             <label>
