@@ -1,4 +1,5 @@
 
+/*-------------------------------------------------- Home.jsx ------------------------------------------------------*/
 // para agregar elementos a "mi lista"
 // eslint-disable-next-line import/prefer-default-export
 export const setFavorite = (payload) => ({
@@ -12,3 +13,10 @@ export const deleteFavorite = (payload) => ({
   type: 'DELETE_FAVORITE',
   payload,
 });
+
+/*-------------------------------------------------- Login.jsx ------------------------------------------------------*/
+export const loginRequest = (payload) => ({
+  type: 'LOGIN_REQUEST',
+  payload,
+});
+

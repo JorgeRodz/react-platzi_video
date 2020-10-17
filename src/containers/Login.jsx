@@ -4,13 +4,15 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { loginRequest } from '../actions';
 import googleIcon from '../assets/static/google-icon.png'; // imagenes
 import twitterIcon from '../assets/static/twitter-icon.png'; // imagenes
 import '../assets/styles/components/Login.scss'; // para importar los estilos
 
-const Login = () => {
-  const [,form, setFormValues] = useState({});
+const Login = (props) => {
+  const [form, setFormValues] = useState({});
 
   const handleInput = (event) => {
     // actualizamos nuestro useState pasando como parametros el lo que contiene el form, mas la informacion de los input
@@ -22,7 +24,8 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault(); // para que no se dispare el event por default y asi poder usar el console.log
-    console.log(form);
+    props.loginRequest(form); // mandamos la informacion del form al store
+    props.history.push('/'); // para redirigirnos al home.jsx
   };
 
   return (
@@ -67,4 +70,10 @@ const Login = () => {
   );
 };
 
-export default Login;
+// para enviar informacion a nuestra store usamos mapDispatchToProps junto con los actions.
+const mapDispatchToProps = {
+  loginRequest,
+};
+
+export default connect(null, mapDispatchToProps)(Login);
+
