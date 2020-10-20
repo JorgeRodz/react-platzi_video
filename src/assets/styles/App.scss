@@ -7,6 +7,6 @@ body {
   background: $main-color;
 }
 
-* {
-  box-sizing: border-box;
+*, *:before, *:after { /*Aplicar correctamente box-sizing*/
+  box-sizing: inherit; /*Aplicar correctamente box-sizing*/
 }

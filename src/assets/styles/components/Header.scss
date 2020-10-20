@@ -27,10 +27,12 @@
   text-align: right;
 }
 .header__menu:hover ul, ul:hover {
-	display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .header__menu li {
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 .header__menu li a {
   color: white;

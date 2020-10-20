@@ -20,3 +20,8 @@ export const loginRequest = (payload) => ({
   payload,
 });
 
+/*-------------------------------------------------- Header.jsx ------------------------------------------------------*/
+export const logoutRequest = (payload) => ({
+  type: 'LOGOUT_REQUEST',
+  payload,
+});

@@ -1,6 +1,7 @@
 // este reducer se hara carga de los actions, en este caso cuando se nos manda 'SET_FAVORITE' vamos a tomara todo el state de myList que seria todo el array y agregarle el nuevo valor que es el action.payload.
 const reducer = (state, action) => {
   switch (action.type) {
+    /*---------------- Home.jsx --------------------*/
     case 'SET_FAVORITE':
       // guardamos en una variable si ya existe el elemento con el id
       const exist = state.myList.find((item) => item.id === action.payload.id);
@@ -14,7 +15,14 @@ const reducer = (state, action) => {
         ...state,
         myList: state.myList.filter((items) => items.id !== action.payload),
       };
+    /*---------------- Login.jsx --------------------*/
     case 'LOGIN_REQUEST':
+      return {
+        ...state,
+        user: action.payload,
+      };
+    /*---------------- Header.jsx --------------------*/
+    case 'LOGOUT_REQUEST':
       return {
         ...state,
         user: action.payload,
