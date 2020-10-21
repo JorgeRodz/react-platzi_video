@@ -3,6 +3,7 @@
 /* eslint-disable indent */
 /* eslint-disable react/jsx-wrap-multilines */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'; // para conectar nuestra aplicacion con los elementos de redux
 import { setFavorite, deleteFavorite } from '../actions'; // importamos la funcion setFavorite de nuestros actions
@@ -21,10 +22,6 @@ const CarouselItem = (props) => {
     });
   };
 
-  const handlePlayIcon = () => {
-    alert('Le diste play al boton de play');
-  };
-
   const handleDeleteFavorite = (itemId) => {
     props.deleteFavorite(itemId);
   };
@@ -34,12 +31,13 @@ const CarouselItem = (props) => {
       <img className="carousel-item__img" src={cover} alt={title} />
       <div className="carousel-item__details">
         <div>
-          <img
-            className="carousel-item__details--img"
-            src={playIcon}
-            alt="Play Icon"
-            onClick={handlePlayIcon}
-          />
+          <Link to={`/player/${id}`}>
+            <img
+              className="carousel-item__details--img"
+              src={playIcon}
+              alt="Play Icon"
+            />
+          </Link>
           {
             isMyList ?
               <img
@@ -75,7 +73,7 @@ CarouselItem.propTypes = {
 };
 
 const mapDispatchToProps = {
-  setFavorite, // la funcion de los actions
+  setFavorite,
   deleteFavorite,
 };
 
