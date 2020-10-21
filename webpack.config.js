@@ -7,7 +7,8 @@ module.exports = {
   entry: './src/index.js', // punto de entrada sera nuestro archivo principal index.js
   output: { // le indicaremos donde se guardaran los archivos resultantes de la compilacion
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: { // extensiones que vamos a utilizar en el proyecto
     extensions: ['.js', '.jsx']
