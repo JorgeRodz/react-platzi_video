@@ -1,5 +1,5 @@
 
-/*-------------------------------------------------- Home.jsx ------------------------------------------------------*/
+/*-------------------------------------------------- CarouselItem.jsx ------------------------------------------------------*/
 // para agregar elementos a "mi lista"
 // eslint-disable-next-line import/prefer-default-export
 export const setFavorite = (payload) => ({
@@ -11,6 +11,11 @@ export const setFavorite = (payload) => ({
 // eslint-disable-next-line import/prefer-default-export
 export const deleteFavorite = (payload) => ({
   type: 'DELETE_FAVORITE',
+  payload,
+});
+
+export const sendVideoSource = (payload) => ({
+  type: 'SEND_VIDEO_SOURCE',
   payload,
 });
 
