@@ -1,14 +1,14 @@
 /* eslint-disable comma-dangle */
-const path = require('path') // para hacer uso del modulo path
-const HtmlWebpackPlugin = require('html-webpack-plugin') // instanciamos el plugin que instalamos
-const MiniCssExtractPlugin = require('mini-css-extract-plugin') // instanciamos el plugin para trabajar con css-sass
+const path = require('path'); // para hacer uso del modulo path
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // instanciamos el plugin que instalamos
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // instanciamos el plugin para trabajar con css-sass
 
 module.exports = {
   entry: './src/index.js', // punto de entrada sera nuestro archivo principal index.js
   output: { // le indicaremos donde se guardaran los archivos resultantes de la compilacion
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: '/', //para que desde esa rutase ejecute el archivo bundle.js
   },
   resolve: { // extensiones que vamos a utilizar en el proyecto
     extensions: ['.js', '.jsx']
@@ -20,7 +20,7 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader"
+            loader: 'babel-loader'
           }
         ]
       },
