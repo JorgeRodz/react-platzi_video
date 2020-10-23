@@ -22,7 +22,7 @@ const initilState = {
       'duration': 164,
       'cover': 'http://dummyimage.com/800x600.png/99118E/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 3,
@@ -35,7 +35,7 @@ const initilState = {
       'duration': 137,
       'cover': 'http://dummyimage.com/800x600.png/302140/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 4,
@@ -48,7 +48,7 @@ const initilState = {
       'duration': 163,
       'cover': 'http://dummyimage.com/800x600.png/5472FF/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 5,
@@ -61,7 +61,7 @@ const initilState = {
       'duration': 194,
       'cover': 'http://dummyimage.com/800x600.png/B36F20/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 6,
@@ -74,7 +74,7 @@ const initilState = {
       'duration': 124,
       'cover': 'http://dummyimage.com/800x600.png/CCC539/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 7,
@@ -87,7 +87,7 @@ const initilState = {
       'duration': 179,
       'cover': 'http://dummyimage.com/800x600.png/FF7A90/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
   ],
   'originals': [
@@ -102,7 +102,7 @@ const initilState = {
       'duration': 148,
       'cover': 'http://dummyimage.com/800x600.png/306880/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 9,
@@ -115,7 +115,7 @@ const initilState = {
       'duration': 128,
       'cover': 'http://dummyimage.com/800x600.png/604180/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 10,
@@ -128,7 +128,7 @@ const initilState = {
       'duration': 346,
       'cover': 'http://dummyimage.com/800x600.png/FF91BA/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 11,
@@ -141,7 +141,7 @@ const initilState = {
       'duration': 226,
       'cover': 'http://dummyimage.com/800x600.png/45807C/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 12,
@@ -154,7 +154,7 @@ const initilState = {
       'duration': 190,
       'cover': 'http://dummyimage.com/800x600.png/577380/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
     {
       'id': 13,
@@ -167,7 +167,7 @@ const initilState = {
       'duration': 160,
       'cover': 'http://dummyimage.com/800x600.png/5472FF/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://us-b4-p-e-xy7.cdn.mdstrm.com/video/p/512e13acaca1ebcd2f000279/58333e214ad055d208427db3_58333e214ad055d208427db5.mp4?cP=1754000&access_token=5cxdGfOiKeLRP6HqG3vpxvKLbiwQxUpMP5NwlVKkbnCWJ4ZgXh7QqVfero3r40j2vsUwobHm61U&ote=1603480309857&ot=nBLeFm-2CJeXS10uxWT0_g&pid=7VGpmwuxkgb5gKLbfyaXqfDlyTPg0Uqa&sid=N7489FKvGTKbaZQ7w4d4ky7ye0BjwcZO&uid=fHJGb4qLGKtxwfEuM9Go09kOXT0pMT3x',
     },
   ],
 };
