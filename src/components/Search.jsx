@@ -6,7 +6,7 @@ const Search = ({ user }) => {
   function isEmpty(obj) {
     return Object.keys(obj).length === 0;
   };
-  console.log(user);
+
   return (
     <section className="main">
       {isEmpty(user) || (

@@ -1,12 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import '../assets/styles/components/Player.scss';
 
 const Player = (props) => {
-  const { match: { params: { id } } } = props;
-  return (
+  const { playing } = props;
+  const hasPlaying = Object.keys(playing).length > 0;
+
+  return hasPlaying ? (
     <div className="Player">
       <video controls autoPlay>
-        <source src="" type="video/mp4" />
+        <source src={playing.source} type="video/mp4" />
       </video>
       <div className="Player-back">
         <button type="button" onClick={() => props.history.goBack()}>
@@ -14,7 +18,14 @@ const Player = (props) => {
         </button>
       </div>
     </div>
-  );
+  ) : <Redirect to="/404/" />;
 };
 
-export default Player;
+// para obtener el objeto "playing"
+const mapStateToProps = (state) => {
+  return {
+    playing: state.playing,
+  };
+};
+
+export default connect(mapStateToProps, null)(Player);
