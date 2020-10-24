@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { connect } from 'react-redux'; //- Para hacer la conexion entre el componente y la informacion extraida del stores
+import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
@@ -10,8 +11,8 @@ import '../assets/styles/App.scss';
 const Home = ({ myList, trends, originals }) => {
   return (
     <>
+      <Header />
       <Search />
-
       {myList.length > 0 && (
         <Categories title="Mi lista">
           <Carousel>
@@ -25,19 +26,16 @@ const Home = ({ myList, trends, originals }) => {
           </Carousel>
         </Categories>
       )}
-
       <Categories title="Tendencias">
         <Carousel>
           {trends.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
-
       <Categories title="Originales de Platzi video">
         <Carousel>
           {originals.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
-
     </>
   );
 };
