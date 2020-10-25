@@ -30,7 +30,7 @@ const Search = (props) => {
         <h1 className="main__user">{user.email}</h1>
       )}
       <h2 className="main__title">¿Qué quieres ver hoy?</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="main__form" onSubmit={handleSubmit}>
         <input type="text" className={inputStyle} placeholder="Buscar..." onChange={handleInput} />
       </form>
     </section>
