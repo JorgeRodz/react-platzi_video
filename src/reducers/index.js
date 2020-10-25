@@ -1,5 +1,7 @@
+/* eslint-disable no-case-declarations */
 // este reducer se hara carga de los actions, en este caso cuando se nos manda 'SET_FAVORITE' vamos a tomara todo el state de myList que seria todo el array y agregarle el nuevo valor que es el action.payload.
 const reducer = (state, action) => {
+  const movies = [...state.trends, ...state.originals];
   switch (action.type) {
     /*---------------- CarouselItem.jsx --------------------*/
     case 'SET_FAVORITE':
@@ -39,6 +41,13 @@ const reducer = (state, action) => {
       return {
         ...state,
         user: action.payload,
+      };
+    /*---------------- Search.jsx --------------------*/
+    case 'SEARCH_MOVIE':
+      return {
+        ...state,
+        search: movies.filter((pelicula) => pelicula.title.toUpperCase().includes(action.payload.toUpperCase())),
+        firstRender: false,
       };
     /*------------------------------------*/
     default:

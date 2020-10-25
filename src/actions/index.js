@@ -36,3 +36,9 @@ export const registerRequest = (payload) => ({
   type: 'REGISTER_REQUEST',
   payload,
 });
+
+/*-------------------------------------------------- Search.jsx ------------------------------------------------------*/
+export const searchMovie = (payload) => ({
+  type: 'SEARCH_MOVIE',
+  payload,
+});

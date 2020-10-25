@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; // para trabajar con el ReactDOM
 import { Provider } from 'react-redux'; //- necesario para trabajar el createStore
-import { createStore } from 'redux'; //- Para crear el store que se enviara como parametro en el Provider
+import { createStore, compose } from 'redux'; //- Para crear el store que se enviara como parametro en el Provider
 import reducer from './reducers'; //- Necesario para crear nuestra store
 import App from './routes/App';
 
@@ -9,6 +9,8 @@ import App from './routes/App';
 const initilState = {
   'user': {},
   'playing': {},
+  'firstRender': true,
+  'search': [],
   'myList': [],
   'trends': [
     {
@@ -172,8 +174,10 @@ const initilState = {
   ],
 };
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 // creamos nuestro store que se creara con la funcion de createStore(reducer, initialState)
-const store = createStore(reducer, initilState);
+const store = createStore(reducer, initilState, composeEnhancers());
 
 // Aqui van todos los componentes a renderizar
 ReactDOM.render(
